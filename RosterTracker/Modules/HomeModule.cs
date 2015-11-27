@@ -7,7 +7,7 @@ namespace RosterTracker
 		public HomeModule ()
 			:base ("/")
 		{
-			Get [""] = parameters => "Welcome home!";
+			Get [""] = parameters => View["Views/Home"];
 		}
 	}
 }
