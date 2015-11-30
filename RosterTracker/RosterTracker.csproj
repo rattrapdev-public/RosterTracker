@@ -70,6 +70,9 @@
     <Reference Include="Nancy.ViewEngines.Razor">
       <HintPath>..\packages\Nancy.Viewengines.Razor.1.4.1\lib\net40\Nancy.ViewEngines.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Nancy.Viewengines.Razor.1.4.1\build\Nancy.ViewEngines.Razor.targets" Condition="Exists('..\packages\Nancy.Viewengines.Razor.1.4.1\build\Nancy.ViewEngines.Razor.targets')" />
@@ -84,6 +87,7 @@
     <Content Include="packages.config" />
     <Content Include="web.config" />
     <Content Include="Views\Home.cshtml" />
+    <Content Include="Views\RosterSummary.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Modules\" />
@@ -92,5 +96,16 @@
   <ItemGroup>
     <Compile Include="Modules\HomeModule.cs" />
     <Compile Include="CustomBootstrapper.cs" />
+    <Compile Include="Modules\RosterApiModule.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Rattrap.RosterTracker\Rattrap.RosterTracker.csproj">
+      <Project>{D4F8A65E-CF01-4E5B-AC42-C8498F275284}</Project>
+      <Name>Rattrap.RosterTracker</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rattrap.RosterTracker.Mocks\Rattrap.RosterTracker.Mocks.csproj">
+      <Project>{C4C1E1AE-45C0-46C6-A1A4-4F29BE3E56D7}</Project>
+      <Name>Rattrap.RosterTracker.Mocks</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

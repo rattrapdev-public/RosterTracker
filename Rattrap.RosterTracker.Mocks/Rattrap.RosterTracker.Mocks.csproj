@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D4F8A65E-CF01-4E5B-AC42-C8498F275284}</ProjectGuid>
+    <ProjectGuid>{C4C1E1AE-45C0-46C6-A1A4-4F29BE3E56D7}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Rattrap.RosterTracker</RootNamespace>
-    <AssemblyName>Rattrap.RosterTracker</AssemblyName>
+    <RootNamespace>Rattrap.RosterTracker.Mocks</RootNamespace>
+    <AssemblyName>Rattrap.RosterTracker.Mocks</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -32,15 +32,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Application\Players\PlayerSummaryPresentationObject.cs" />
-    <Compile Include="Application\Players\IPlayerApplicationService.cs" />
-    <Compile Include="Domain\Players\Year.cs" />
+    <Compile Include="Application\Players\MockPlayerApplicationService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Application\" />
     <Folder Include="Application\Players\" />
-    <Folder Include="Domain\" />
-    <Folder Include="Domain\Players\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Rattrap.RosterTracker\Rattrap.RosterTracker.csproj">
+      <Project>{D4F8A65E-CF01-4E5B-AC42-C8498F275284}</Project>
+      <Name>Rattrap.RosterTracker</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
