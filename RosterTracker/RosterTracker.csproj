@@ -88,6 +88,9 @@
     <Content Include="web.config" />
     <Content Include="Views\Home.cshtml" />
     <Content Include="Views\RosterSummary.cshtml" />
+    <Content Include="Scripts\jquery-2.1.4-vsdoc.js" />
+    <Content Include="Scripts\jquery-2.1.4.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Modules\" />
@@ -109,5 +112,8 @@
       <Project>{C4C1E1AE-45C0-46C6-A1A4-4F29BE3E56D7}</Project>
       <Name>Rattrap.RosterTracker.Mocks</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\jquery-2.1.4.min.map" />
   </ItemGroup>
 </Project>

@@ -4,6 +4,7 @@ using Nancy;
 using Autofac;
 using Rattrap.RosterTracker.Mocks;
 using Rattrap.RosterTracker.Application.Players;
+using Nancy.Conventions;
 
 namespace RosterTracker
 {
@@ -19,6 +20,16 @@ namespace RosterTracker
 
 			StaticConfiguration.DisableErrorTraces = false;
 		}
+
+		protected override void ConfigureConventions (NancyConventions nancyConventions)
+		{
+			base.ConfigureConventions (nancyConventions);
+			nancyConventions.StaticContentsConventions.Add (
+				StaticContentConventionBuilder.AddDirectory("Scripts")
+			);
+			nancyConventions.StaticContentsConventions.Add (
+				StaticContentConventionBuilder.AddDirectory("Data")
+			);
+		}
 	}
 }
-
