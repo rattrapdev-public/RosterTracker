@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Nancy;
 using Newtonsoft.Json;
+using Rattrap.RosterTracker.Application.Players;
 
 namespace RosterTracker
 {

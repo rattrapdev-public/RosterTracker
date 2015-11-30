@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Rattrap.RosterTracker
+namespace Rattrap.RosterTracker.Application.Players
 {
 	public class PlayerSummaryPresentationObject
 	{

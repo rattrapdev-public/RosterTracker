@@ -1,6 +1,4 @@
-﻿@{
-    Layout = null;
-}
+﻿@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<System.Collections.Generic.IEnumerable<Rattrap.RosterTracker.Application.Players.PlayerSummaryPresentationObject>>
 
 <!DOCTYPE html>
 <html>
@@ -8,6 +6,30 @@
     <title>RosterSummary</title>
 </head>
 <body>
+Here is the roster summary.
+<table>
+	<thead>
+		<tr>
+			<th>#</th>
+			<th>Name</th>
+			<th>Ht</th>
+			<th>Wt</th>
+			<th>Yr</th>
+		</tr>
+	</thead>
+	<tbody>
+	@foreach(PlayerSummaryPresentationObject player in Model)
+	{
+		<tr>
+			<td>@player.JerseyNumber</td>
+			<td>@player.Name</td>
+			<td>@player.Height</td>
+			<td>@player.Weight</td>
+			<td>@player.Year</td>
+		</tr>
+	}
+	</tbody>
+</table>
 </body>
 </html>
 

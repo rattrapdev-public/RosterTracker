@@ -97,6 +97,8 @@
     <Compile Include="Modules\HomeModule.cs" />
     <Compile Include="CustomBootstrapper.cs" />
     <Compile Include="Modules\RosterApiModule.cs" />
+    <Compile Include="Modules\RosterModule.cs" />
+    <Compile Include="RazorConfig.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Rattrap.RosterTracker\Rattrap.RosterTracker.csproj">

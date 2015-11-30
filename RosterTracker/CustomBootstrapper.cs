@@ -2,8 +2,8 @@
 using Nancy.Bootstrappers.Autofac;
 using Nancy;
 using Autofac;
-using Rattrap.RosterTracker;
 using Rattrap.RosterTracker.Mocks;
+using Rattrap.RosterTracker.Application.Players;
 
 namespace RosterTracker
 {

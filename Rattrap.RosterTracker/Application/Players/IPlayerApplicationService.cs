@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace Rattrap.RosterTracker
+namespace Rattrap.RosterTracker.Application.Players
 {
 	public interface IPlayerApplicationService
 	{
