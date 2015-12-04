@@ -8,6 +8,7 @@ namespace RosterTracker
 			:base ("/")
 		{
 			Get [""] = parameters => View["Views/Home"];
+			Get ["interactiveRoster"] = parameters => View["Views/InteractiveRoster"];
 		}
 	}
 }
