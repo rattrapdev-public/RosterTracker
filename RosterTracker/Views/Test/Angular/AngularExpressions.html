@@ -1,0 +1,21 @@
+﻿
+<html>
+	<head>
+		<title>Angular Expanded App</title>
+		<script src="/Scripts/angular.min.js"></script>
+	</head>
+	<body>
+		<h1>Expanded Application</h1>
+		<!-- Expressions are wrapped in {{ }} and use pure javascript to output the calculated the result to the page -->
+		<div ng-app = "" ng-init = "quantity = 1;cost = 30; student = {firstname:'Mahesh',lastname:'Parashar',rollno:101};marks = [80,90,75,73,60]">
+			<!-- Using string -->
+			<p>Hello {{ student.firstname + " " + student.lastname }}</p>
+			<!-- Using numbers -->
+			<p>Expense on Boks: {{cost * quantity}}</p>
+			<!-- Using object -->
+			<p>Roll No: {{student.rollno}}</p>
+			<!-- Using Arrays -->
+			<p>Marks(Math): {{marks[3]}}</p>
+		</div>
+	</body>
+</html>

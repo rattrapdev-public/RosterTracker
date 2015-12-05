@@ -7,8 +7,11 @@
 	<body>
 		<h1>Sample Application</h1>
 
+		<!-- ng-app: This directive define and links an AngularJS application to HTML -->
 		<div ng-app="">
+			<!-- ng-model: This directive binds the values of AngularJS application data to HTML input -->
 			<p>Enter your Name: <input type="text" ng-model="name" /></p>
+			<!-- ng-bind: This directive bind the AngularJS application data to HTML tags -->
 			<p>Hello <span ng-bind="name"></span></p>
 		</div>
 	</body>

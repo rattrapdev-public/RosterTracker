@@ -862,6 +862,16 @@
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Views\InteractiveRoster.html" />
     <Content Include="Views\Test\Angular\FirstHelloWorld.html" />
+    <Content Include="Views\Test\Angular\FirstAppExpanded.html" />
+    <Content Include="Views\Test\Angular\AngularExpressions.html" />
+    <Content Include="Views\Test\Angular\FirstController.html" />
+    <Content Include="Views\Test\Angular\Filters.html" />
+    <Content Include="Views\Test\Angular\Tables.html" />
+    <Content Include="Views\Test\Angular\HtmlDom.html" />
+    <Content Include="Content\TestContent.css" />
+    <Content Include="Scripts\Test\mainApp.js" />
+    <Content Include="Scripts\Test\studentController.js" />
+    <Content Include="Views\Test\Angular\Modules.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Modules\" />
@@ -869,6 +879,8 @@
     <Folder Include="Views\Test\" />
     <Folder Include="Views\Test\Angular\" />
     <Folder Include="Modules\Test\" />
+    <Folder Include="Content\" />
+    <Folder Include="Scripts\Test\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Modules\HomeModule.cs" />
