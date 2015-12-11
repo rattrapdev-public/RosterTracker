@@ -872,6 +872,15 @@
     <Content Include="Scripts\Test\mainApp.js" />
     <Content Include="Scripts\Test\studentController.js" />
     <Content Include="Views\Test\Angular\Modules.html" />
+    <Content Include="Views\Test\Angular\Forms.html" />
+    <Content Include="Views\Test\Angular\Includes.html" />
+    <Content Include="Scripts\Test\main.htm" />
+    <Content Include="Scripts\Test\subjects.htm" />
+    <Content Include="Views\Test\Angular\Ajax.html" />
+    <Content Include="Views\Test\Angular\Views.html" />
+    <Content Include="Views\Test\Angular\Scopes.html" />
+    <Content Include="Views\Test\Angular\Services.html" />
+    <Content Include="Views\Test\Angular\DependencyInjection.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Modules\" />
@@ -915,5 +924,6 @@
     <None Include="Scripts\angular.min.js.map" />
     <None Include="Scripts\errors.json" />
     <None Include="Scripts\version.json" />
+    <None Include="Scripts\Test\data.txt" />
   </ItemGroup>
 </Project>

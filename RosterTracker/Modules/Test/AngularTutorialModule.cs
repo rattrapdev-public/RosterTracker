@@ -15,6 +15,13 @@ namespace RosterTracker
 			Get ["/Tables"] = _ => View ["Views/Test/Angular/Tables"];
 			Get ["/HtmlDom"] = _ => View ["Views/Test/Angular/HtmlDom"];
 			Get ["/Modules"] = _ => View ["Views/Test/Angular/Modules"];
+			Get ["/Forms"] = _ => View ["Views/Test/Angular/Forms"];
+			Get ["/Includes"] = _ => View ["Views/Test/Angular/Includes"];
+			Get ["/Ajax"] = _ => View ["Views/Test/Angular/Ajax"];
+			Get ["/Views"] = _ => View ["Views/Test/Angular/Views"];
+			Get ["/Scopes"] = _ => View ["Views/Test/Angular/Scopes"];
+			Get ["/Services"] = _ => View ["Views/Test/Angular/Services"];
+			Get ["/DependencyInjection"] = _ => View ["Views/Test/Angular/DependencyInjection"];
 		}
 	}
 }
