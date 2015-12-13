@@ -881,6 +881,12 @@
     <Content Include="Views\Test\Angular\Scopes.html" />
     <Content Include="Views\Test\Angular\Services.html" />
     <Content Include="Views\Test\Angular\DependencyInjection.html" />
+    <Content Include="Scripts\app\app.js" />
+    <Content Include="Scripts\app\data\rosterService.js" />
+    <Content Include="Scripts\app\rosterViewer\rosterList.html" />
+    <Content Include="Scripts\app\rosterViewer\rosterListController.js" />
+    <Content Include="Scripts\app\rosterViewer\playerDetail.html" />
+    <Content Include="Scripts\app\rosterViewer\playerDetailController.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Modules\" />
@@ -890,6 +896,9 @@
     <Folder Include="Modules\Test\" />
     <Folder Include="Content\" />
     <Folder Include="Scripts\Test\" />
+    <Folder Include="Scripts\app\" />
+    <Folder Include="Scripts\app\rosterViewer\" />
+    <Folder Include="Scripts\app\data\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Modules\HomeModule.cs" />

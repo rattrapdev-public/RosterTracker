@@ -14,6 +14,7 @@ namespace RosterTracker
 				var roster = playerApplicationService.GetRosterSummary();
 				return View["views/RosterSummary", roster];
 			};
+			Get ["/interactive"] = _ => View ["views/InteractiveRoster"];
 		}
 	}
 }
