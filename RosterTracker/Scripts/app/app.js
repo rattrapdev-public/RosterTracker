@@ -6,4 +6,6 @@ config(['$routeProvider', function($routeProvider) {
 		otherwise({redirectTo: '/players'});
 }]);
 
-angular.module('interactiveRosterApp.controllers', []);
+angular.module('interactiveRosterApp.controllers', ['interactiveRosterApp.services']);
+
+angular.module('interactiveRosterApp.services', []);

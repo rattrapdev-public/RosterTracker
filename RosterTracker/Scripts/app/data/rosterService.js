@@ -1,10 +1,10 @@
 ﻿
-angular.module('rosterTrackerApp.services', []).
+angular.module('interactiveRosterApp.services').
 	service('rosterService', function($http) {
 		this.rosterList = function() {
-			return [
-				{ name: 'John', email: 'john.doe@email.com' },
-				{ name: 'Jane', email: 'jane.doe@email.com' }
-			];
+			return $http.get('/api/players')
+					.then(function(result) {
+						return result.data;
+					});
 		};
 	});

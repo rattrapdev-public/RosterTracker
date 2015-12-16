@@ -14,7 +14,7 @@ namespace RosterTracker
 			Get [""] = _ => 
 			{
 				IEnumerable<PlayerSummaryPresentationObject> rosterSummary = applicationService.GetRosterSummary();
-				return Response.AsJson(JsonConvert.SerializeObject(rosterSummary));
+				return Response.AsJson(rosterSummary);
 			};
 		}
 	}
